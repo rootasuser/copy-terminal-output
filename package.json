@@ -1,0 +1,29 @@
+{
+  "name": "copy-terminal-output",
+  "displayName": "Copy Terminal Output",
+  "description": "Highlight text in the terminal, right click, and choose Copy Output. Developed by Windel Navales.",
+  "version": "1.0.2",
+  "icon": "icon.png",
+  "publisher": "windelnavales",
+  "author": { "name": "Windel Navales" },
+  "license": "MIT",
+  "engines": { "vscode": "^1.80.0" },
+  "categories": ["Other"],
+  "keywords": ["terminal", "copy", "clipboard", "output"],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      { "command": "copyTerminalOutput.copy", "title": "Copy Output" },
+      { "command": "copyTerminalOutput.about", "title": "Copy Terminal Output: About" }
+    ],
+    "menus": {
+      "terminal/context": [
+        {
+          "command": "copyTerminalOutput.copy",
+          "group": "1_copyoutput@1",
+          "when": "terminalTextSelected"
+        }
+      ]
+    }
+  }
+}
