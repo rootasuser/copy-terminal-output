@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Copy Terminal Output
 
 A small VS Code extension: highlight text in the integrated terminal, right click, and choose **Copy Output** to copy it to your clipboard.
@@ -27,3 +28,6 @@ Developed by **Windel Navales**.
 
 ## License
 [MIT](LICENSE) - you are free to use and modify this, as long as the copyright notice and credit to Windel Navales are kept.
+=======
+# copy-terminal-output
+>>>>>>> 105f7d8c9d07b9e29aa1570942086b62394a6e29
